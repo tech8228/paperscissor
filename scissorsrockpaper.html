@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <title>Delta | ScissorsRockPaper </title>
+  
+</head>
+
+<body>
+  <div id="game-modes">
+    <h2>ScissorsRockPaper</h2>
+      <p>Select a game mode:</p>
+      <label>
+          <input type="radio" name="game-mode" value="computer" checked>
+          Player vs. Computer
+      </label>
+      <label>
+          <input type="radio" name="game-mode" value="player">
+          Player vs. Player
+      </label>
+      <button id="start-game">Start Game</button>
+  </div>
+
+  <div id="container">
+      <h2>ScissorsRockPaper</h2>
+      <div id="computer-container">
+          <div id="points">
+              <label for="playerPoints">Player points:</label>
+              <span class="playerPoints"></span>
+              <label for="computerPoints">Computer Points:</label>
+              <span class="computerPoints"></span>
+          </div>
+          <div id="choice">
+              <div id="playerChoice">
+                  <img src="" alt="" id="playerChoiceImg">
+                  <h3 id="playerChoiceTxt"></h3>
+              </div>
+              <div id="computerChoice">
+                  <img src="" alt="" id="computerChoiceImg">
+                  <h3 id="computerChoiceTxt"></h3>
+              </div>
+          </div>
+          <div id="buttons">
+              <button class="btn">Rock</button>
+              <button class="btn">Paper</button>
+              <button class="btn">Scissors</button>
+          </div>
+        
+      </div>
+
+      <div id="player-container">
+        <div id="points">
+            <label for="player1Points">Player1 points:</label>
+            <span class="player1Points"></span>
+            <label for="player2Points">Player2 Points:</label>
+            <span class="player2Points"></span>
+        </div>
+        <div id="choice">
+            <div id="player1Choice">
+                <img src="" alt="" id="player1ChoiceImg">
+                <h3 id="player1ChoiceTxt"></h3>
+            </div>
+            <div id="player2Choice">
+                <img src="" alt="" id="player2ChoiceImg">
+                <h3 id="player2ChoiceTxt"></h3>
+            </div>
+        </div>
+        <div id="buttons">
+            <button class="btn">Rock</button>
+            <button class="btn">Paper</button>
+            <button class="btn">Scissors</button>
+        </div>
+        <br>
+        <div id="player-buttons">
+            <button id="player1Ready" class="player-ready-btn">Player 1 Ready</button>
+            <button id="player2Ready" class="player-ready-btn">Player 2 Ready</button>
+          </div>
+       
+    </div>
+  </div>
+
+  <footer class="page-footer">
+      <span>made by Group Delta</span>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
